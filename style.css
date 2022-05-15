@@ -1,0 +1,116 @@
+.keyboard {
+  width: 140px;
+  height: 30px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 6px;
+}
+
+.key {
+  display: block;
+  background: orange;
+  border-radius: 4px;
+}
+
+.key1 {
+  grid-area: 1/1/2/3;
+}
+
+.key2 {
+  grid-area: 1/3/2/4;
+}
+
+.key3 {
+  grid-area: 1/4/2/5;
+}
+
+.key4 {
+  grid-area: 1/5/2/6;
+}
+
+.key5 {
+  grid-area: 1/6/2/7;
+}
+
+.key6 {
+  grid-area: 1/7/2/8;
+}
+
+.key7 {
+  grid-area: 2/1/3/2;
+}
+
+.key8 {
+  grid-area: 2/2/3/3;
+}
+
+.key9 {
+  grid-area: 2/3/3/7;
+}
+
+.key10 {
+  grid-area: 2/7/3/8;
+}
+
+*,
+*:before,
+*:after {
+  position: relative;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #FFF6D8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.key:nth-child(4n+1) {
+  background: #721b65;
+}
+
+.key:nth-child(4n+2) {
+  background: #ffbd69;
+}
+
+.key:nth-child(4n+3) {
+  background: #b80d57;
+}
+
+.key:nth-child(4n+4) {
+  background: #f8615a;
+}
+
+.key:nth-child(4n+5) {
+  background: #b80d57;
+}
+
+.key:nth-child(4n+6) {
+  background: #b80d57;
+}
+
+.key:nth-child(4n+7) {
+  background: #ffbd69;
+}
+
+.key:nth-child(4n+8) {
+  background: #ffbd69;
+}
+
+.key:nth-child(4n+9) {
+  background: #b80d57;
+}
+
+.key:nth-child(4n+10) {
+  background: #721b65;
+}
